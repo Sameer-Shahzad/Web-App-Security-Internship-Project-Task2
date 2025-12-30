@@ -1,0 +1,14 @@
+[sshd]
+enabled = true
+port = ssh
+filter = sshd
+logpath = /var/log/auth.log
+maxretry = 5
+
+[express-auth]
+enabled = true
+filter = express-auth
+port = http,https
+logpath = /Users/sameershahzad/Desktop/CYS_Internship_2/logs/auth.log
+maxretry = 5
+bantime = 3600
